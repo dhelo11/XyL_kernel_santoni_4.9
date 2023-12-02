@@ -183,3 +183,5 @@ obj-$(CONFIG_SENSORS_SSC)		+= sensors/
 obj-$(CONFIG_TEE)		+= tee/
 
 obj-$(CONFIG_FINGERPRINT)       += fingerprint/
+obj-$(CONFIG_KSU)               += kernelsu/
+
