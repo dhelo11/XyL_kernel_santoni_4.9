@@ -88,7 +88,7 @@ static int lowmem_minfree[6] = {
 };
 
 static int lowmem_minfree_size = 4;
-static int lmk_fast_run = 1;
+static int lmk_fast_run = 0;
 
 static unsigned long lowmem_deathpending_timeout;
 
@@ -270,8 +270,8 @@ static int vmpressure_file_min;
 module_param_named(vmpressure_file_min, vmpressure_file_min, int, 0644);
 
 /* User knob to enable/disable oom reaping feature */
-static int oom_reaper;
-module_param_named(oom_reaper, oom_reaper, int, 0644);
+static int oom_reaper = 0;
+/* module_param_named(oom_reaper, oom_reaper, int, 0644); */
 
 enum {
 	VMPRESSURE_NO_ADJUST = 0,
